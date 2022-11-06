@@ -2,8 +2,10 @@ const mongoose = require ('mongoose');
 
 const mongoURI = "mongodb://localhost:27017/"
 
-const connectMongo = () => {
+const connectToMongo = () => {
     mongoose.connect(mongoURI, ()=> {
-        console.log("connecte to mongo succesul")
+        console.log("connected to mongo succesfully")
     })
 }
+
+module.exports = connectToMongo;
